@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: 976089/npipeline
+  repository: alok1710/alokjenkins
   #pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: latest
@@ -37,7 +37,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: NodePort
+  type: LoadBalancer
   port: 80
   nodePort: 32323
 ingress:
